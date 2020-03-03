@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 public class PersistentBugger {
-    public  int count;
-    static String str2;
+    public int count;
+     String str2;
     public int recursInt(long n){
         String str=String.valueOf(n);
         char [] charArr=str.toCharArray();
@@ -22,7 +22,7 @@ public class PersistentBugger {
     public static int persistence(long n) {
       PersistentBugger persistentBugger=new PersistentBugger();
      int c= persistentBugger.recursInt(n);
-    // System.out.println(c);
+     System.out.println(c);
         return c;
     }
 }
