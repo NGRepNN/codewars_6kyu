@@ -1,16 +1,18 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 //Your order, please
 public class Order {
     public static String order(String words) {
+        String result="";
         String [] strArr=words.split(" ");
-
-        int i =strArr[0].indexOf("5");
-        System.out.println(i);
-        String result;
-        System.out.println(Arrays.stream(strArr).sorted().collect(Collectors.toList()));
-       return  null;
+        ArrayList<String>arrayList=new ArrayList<String>();
+        for(int i=0;i<=strArr.length-1;i++){
+            for(int j=0;j<=strArr.length-1;j++){
+                if(strArr[j].indexOf(String.valueOf(i+1))>=0){
+                    arrayList.add(strArr[j]);
+                }
+            }
+        }
+result=String.join(" ",arrayList);
+       return  result;
     }
 }
