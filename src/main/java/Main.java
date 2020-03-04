@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args){
-CreatePhoneNumber.createPhoneNumber(new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0});
+        int[] a = new int[]{121, 144, 19, 161, 19, 144, 19, 11};
+        int[] b = new int[]{121, 14641, 20736, 361, 25921, 361, 20736, 361};
+AreSame.comp(a,b);
     }
 }
