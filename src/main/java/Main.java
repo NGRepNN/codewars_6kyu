@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args){
-MexicanWave.wave(" gap ");
+CamelCase.toCamelCase("the-Stealth-Warrior");
     }
 }
