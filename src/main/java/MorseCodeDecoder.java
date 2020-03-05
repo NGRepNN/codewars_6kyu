@@ -18,13 +18,13 @@ public class MorseCodeDecoder {
 map.put(morse[i],english[i]);
         }
     String [] code=morseCode.split(" ");
-        String result="";
+        StringBuilder result= new StringBuilder();
         for(String i:code){
             if(i.equals("")){
-               result=result+" "; continue;
+                result.append(" "); continue;
             }
-            result=result+map.get(i);
+            result.append(map.get(i));
         }
-return  result.replaceAll("[\\s]{2,}", " ");
+return  result.toString().replaceAll("[\\s]{2,}", " ");
     }
 }
